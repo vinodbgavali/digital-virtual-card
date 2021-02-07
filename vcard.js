@@ -30,8 +30,12 @@ const checkInput = () => {
         setError(email,"email cannot be Blank");
     }
    
+    else if(!isEmail(emailValue)){
+        setError(email,"email not valid");
+    }
+
     else{
-        setSuccess(email)
+        setSuccess(email);
     }
 
     if(subjectValue === "" ){
@@ -65,4 +69,8 @@ const setSuccess = (labelFor) =>{
     const form_group = labelFor.parentElement;
     form_group.className = "form_group success";
 
+}
+
+function isEmail(email) {
+	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }

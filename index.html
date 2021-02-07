@@ -75,19 +75,24 @@
                             </div>
 
                             <div class="contact_card ">
-                                <i class="fas fa-envelope me-2"></i>
-                                <span>vinodbgavali@gmail.com</span>
+                                <a href="#contact_us"> <i class="fas fa-envelope me-2"></i>
+                                    <span>vinodbgavali@gmail.com</span></a>
+
                             </div>
 
                             <div class="contact_card ">
-                                <i class="fas fa-globe me-2"></i>
-                                <span>vinodbgavali.com</span>
+                                <a href="https://www.pragoinfotech.com/">
+                                    <i class="fas fa-globe me-2"></i>
+                                    <span>vinodbgavali.com</span></a>
                             </div>
 
+
                             <div class="contact_card ">
-                                <i class="fas fa-map-marker-alt me-2"></i>
-                                <span>602,Shukrwar peth,Pune,
-                                    Maharashtra,411002 </span>
+                                <a href="https://www.google.com/maps/place/Prago+Infotech/@18.5057655,73.8577024,18z/data=!4m5!3m4!1s0x3bc2c0135cae52e9:0xb470796d3c150753!8m2!3d18.5059207!4d73.8587216"
+                                    target="_blank">
+                                    <i class="fas fa-map-marker-alt me-2"></i>
+                                    <span>602,Shukrwar peth,Pune,
+                                        Maharashtra,411002 </span></a>
                             </div>
 
                             <div class="row justify-content-center">
@@ -262,7 +267,7 @@
                         </div>
                     </div>
 
-                    <div class="section_container">
+                    <div class="section_container" id="contact_us">
                         <h2>Contact us / Send us A Message</h2>
                         <hr>
                         <div class="row justify-content-center">
@@ -293,15 +298,19 @@
                                             <i class="fas fa-exclamation-circle "></i>
                                             <span class="errorMsg">error</span>
                                         </div>
-                                        <div class="form_group">
+                                        <div class="form_group ">
                                             <label for="message">Message</label>
-                                            <input type="text" name="message" value="" placeholder="Message"
-                                                id="message" class="">
+                                            <!-- <input type="text" name="message" value="" placeholder="Message"
+                                                id="message" class="message"> -->
+
+                                            <textarea id="message" name="message" placeholder="Your Message" rows="4"
+                                                cols="50"></textarea>
+
                                             <i class="fas fa-check-circle "></i>
                                             <i class="fas fa-exclamation-circle "></i>
                                             <span class="errorMsg">error</span>
                                         </div>
-                                        <button type="submit" class="btn  btn-primary ">Submit</button>
+                                        <button type="submit" class="btn  btn-primary mt-2">Submit</button>
                                     </form>
                                 </div>
                             </div>
@@ -575,8 +584,7 @@
 
 
     </div>
-    </div>
-    </div>
+
 
 
 

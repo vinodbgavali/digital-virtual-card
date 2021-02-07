@@ -14,8 +14,6 @@ body{
 }
 
 
-
-
 .section_container{
     text-align: center;
     margin: 10px;
@@ -34,70 +32,6 @@ body{
     border-radius: 10px;
     
 }
-
-/* 
-.profile_section{
-    position: relative;
-}
-
-.banner_image{
-    width: 100%;
-    height: 30vh;
-    background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.profile_image{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    text-align: center;
-    position: absolute;
-
-    transform: translate(-50%, -50%);
-} */
-
-/* 
-2nd try
-
-.profile_section {
-    width: auto;
-    height: auto;
-    margin-top: 100px;
-    z-index: 999;
-    
-}
-
-.profile_image{
-   z-index: 999;
-}
-
-
-.profile_image img{
-    width: 150px;
-    border-radius: 50%;
-    margin-top: 100px;
-}
-
-
-
-.banner_img{
-    position: absolute;
-    top: 10px;
-
-  
-   z-index: 1;
-    margin-right: 10px;
-}
-
-.banner_img img {
-    width: 100%;
-    height: 200px;
-  
-} */
-
-
 
 
 
@@ -143,6 +77,10 @@ body{
    
 }
 
+.contact_card a{
+    text-decoration: none;
+    color: black;
+}
 
 .contact_social,.contact_message{
     display: flex;
@@ -324,22 +262,24 @@ color: #0d6efd;
 
 }
 
-.form_group input{
+.form_group input,textarea{
     padding: 5px 10px;
     height: auto;
     border-radius: 5px;
     outline: none;
     border: 2px solid #ced4da;
+    resize: none;
 }
 
 
-.form_group.success input{
+
+.form_group.success input,.form_group.success textarea{
     border-color:  #2ecc71;
 
 }
 
 
-.form_group.error input{
+.form_group.error input, .form_group.error textarea{
     border-color:  #FF3E0B;
 }
 
@@ -347,7 +287,7 @@ color: #0d6efd;
 
 .form_group span{
     position: absolute;
-    top: 65px;
+    bottom: -25px;
     left: 10px;
     color:  #FF3E0B;
     display: none;
