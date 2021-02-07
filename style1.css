@@ -387,9 +387,86 @@ color: #0d6efd;
 }
 
 
+.products{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product_card{
+    width: 48%;
+    padding: 10px;
+    border: 1px solid;
+    margin: 1%;
+    -webkit-box-shadow: 1px 1px 5px 1px #0F0F0F; 
+    box-shadow: 1px 1px 5px 1px #0F0F0F;
+    border-radius: 10px;
+    position: relative;
+}
+
+.product_image img{
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.product_info{
+    text-align: left;
+}
+
+.offer_tag{
+    position: absolute;
+    top: 20px;
+    right: 0;
+    padding: 10px;
+    
+}
+.offer_tag span {
+    background-color: #ed3939;
+    padding: 0 10px;-webkit-border-top-left-radius: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: white;
+}
 
 
+.new_amount{
+    font-size: 20px;
+    font-weight: 500;
+}
 
+
+.old_amount{
+    font-size: 15px;
+    font-weight: 200;
+    padding-left: 10px;
+}
+
+.payment_card{
+    margin: auto;
+}
+
+.bank_details{
+    border:1px solid;
+    padding: 10px;
+    margin: 10px;
+   
+ 
+}
+
+.bank_logo img{
+    width: auto;
+    height: 60px;
+}
+
+.paytm_scan{
+    width: auto;
+    height: auto;
+}
 
 
 @media only screen and (max-width: 480px) {
@@ -409,6 +486,10 @@ color: #0d6efd;
     }
 
     .services_card{
+        width: 100%;
+    }
+
+    .product_card{
         width: 100%;
     }
 }
